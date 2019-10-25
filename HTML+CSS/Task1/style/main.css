@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../font/Bookman-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../font/Roboto-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bookman-Regular';
+  src: url('../font/Bookman-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+article,section{
+ min-height: 500px;
+ padding-left: 1em;
+ padding-top: 1em;
+}
+
+h1{
+  color:#35C959FF 
+}
+a {
+  text-decoration: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+footer {
+  display: flex;
+  margin-bottom: 1em;
+  padding-left: 1em;
+
+}
+
+img{
+  padding-top: 1em;
+}
+
+article p{
+  padding-top: 1em;
+}
+
+.toTop {
+  background-color: #35C959FF;
+  color: white;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: block;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.contactBlock {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
