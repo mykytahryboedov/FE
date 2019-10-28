@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../font/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../font/Roboto-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body{
+	font-family: Roboto-Regular;
+}
+
+table, tr, th, td{
+	border: solid;
+	border-width: 1px;
+}
+
+
+.table_border{
+	align-items: center;
+	justify-content: center;
+	border: none ;
+	padding-left: 1em;
+}
