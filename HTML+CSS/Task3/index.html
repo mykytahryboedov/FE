@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Task3</title>
 	<link rel="stylesheet" type="text/css" href="style/main.css">
 </head>
 <body>
 	<main>
 		<section class="top">
 		<header>
-				
+				<!-- Мне не хватило времени доделать хэдэр, простите -->
 				<div class="header-nav">
 					<nav>
 						<div class="header-branding">
-					BoomBapLayOut
+					BoomBapRap 
 						</div>
 						<ul>
 							<li><a href=""> Home </a></li>
-							<li><a href=""> About </a> </li>
-							<li><a href=""> Content </a> </li>
-							<li><a href=""> Contact Me! </a></li>
+							<li><a href="#about"> About </a> </li>
+							<li><a href="#content"> Content </a> </li>
+							<li><a href="#Contacts"> Contact Me! </a></li>
 						</ul>
 					</nav>
 				</div>
@@ -28,15 +28,12 @@
 				</h1>
 		</header>
 	</section>
-	<section class="about">
+	<section class="about" id="about">
 		<div class="wrapper">
 			<picture>
 
-			<div class="about-image">
-				
-					<source srcset="about.webp" media="(max-width: 35em)">
+			<div class="about-image">				
 					<img src="img/about.webp" alt="it's me"> 
-
 			 </div>
 
 			</picture>
@@ -46,8 +43,8 @@
 				
 					<h3>About Me</h3>
 					<p>
-						A small river named <wbr>Duden flows by their place and supplies it <br>
-						with the <mark>necessary</mark> regelialia
+						A small drum named <wbr>snare by his charasteristic sound and supplies it <br>
+						with the <mark>necessary</mark> noise
 					</p>
 
 					<p> 
@@ -65,7 +62,10 @@
 					</div>
 
 					<div class="about-time">
-						I joined Epam University Program in <time>2019</time>
+						<p>
+							I joined Epam University Program in <time>October 2019</time>
+						</p>
+						
 					</div>
 					
 				</div>
@@ -75,20 +75,109 @@
 		
 	</section>
 
-	<section class="Content">
+	<section class="content" id="content">
 
-		<div class="wrapper">
-			<h4>Content</h4>
+		<div class="section-wrapper">
 			<div class="Content-Figure">
 				<figure>
 				<img src="img/Caisse_claire.jpg" class="snare">
 				<figcaption>Big Snare Drum</figcaption>
 			</figure>
 			</div>
+
+			<div class="Content-Figure">
+				<figure>
+				<img src="img/Caisse_claire.jpg" class="snare">
+				<figcaption>Big Snare Drum</figcaption>
+			</figure>
+			</div>
+
+			<div class="Content-Figure">
+				<figure>
+				<img src="img/Caisse_claire.jpg" class="snare">
+				<figcaption>Big Snare Drum</figcaption>
+			</figure>
+			</div>
+			<div class="Content-Figure">
+				<figure>
+				<img src="img/Caisse_claire.jpg" class="snare">
+				<figcaption>Big Snare Drum</figcaption>
+			</figure>
+			</div>
+
+
 			
 		</div>
 	</section>
+
+	<section class="audio-video">
+		<h2>Audio/Video</h2>
+		<div class="section-wrapper">
+			<div class="Content-audio">
+				<details open="">
+					<summary>Kinds of Snare Drum sounds</summary>
+					<table>
+						<tbody>
+							<tr><td>Karate Snare</td><td><audio controls=""> <source src="audio/karate snare.wav" type=""></audio></td></tr>
+							<tr><td>Wide Snare</td><td><audio controls=""><source src="audio/wide snare.wav" type=""></audio></td></tr>
+							<tr><td>Trill Snare</td><td><audio controls=""><source src="audio/trill snare.wav" type=""></audio></td></tr>
+							<tr><td>Live Snare</td><td><audio controls=""><source src="audio/live snare.wav" type=""></audio></td></tr>
+							<tr><td>Stereo Snare</td><td><audio controls=""><source src="audio/stereo snare.wav" type=""></audio></td></tr>
+						
+						</tbody>
+					</table>
+				</details>
+			</div>
+			<div class="Content-video">
+				<video height="240" width="320" controls="controls">
+					<source src="video/Marching Snare Drum Solo - Memphis Drum Shop - Isiah Rowser.mp4">
+					 <track kind="subtitles" src="captions/vtt/sintel-en.vtt" label="Sound">
+					 <!-- Я так понимаю что субтитры не работают т.к у меня сайт не на сервере?		 -->
+				</video>
+			</div>
+		</div>
+		
+	</section>
 	
+	<section class="Contacts" id="Contacts">
+		<h2>Contact Me!</h2>
+		<div class="section-wrapper">
+			<div class="contact-form">
+				<div class="form-element">
+					<label for="name">Your Name: </label><input id="name" type="text" placeholder="Type your name...">
+				</div>
+				<div class="form-element">
+					<label for="name">Your Telephone Number: </label><input id="name" type="text" placeholder="Type your number...">
+				</div>
+				<div class="form-element">
+					<label for="name">Your Name: </label><input id="name" type="text" placeholder="Type your name...">
+				</div>
+				<div class="form-element">
+					<label for="name">What kind of drum you like the most?</label><input type="text" list="drums" name="drums">
+					<datalist id="drums">
+						<option value="Karate Snare"></option>
+						<option value="Wide Snare"></option>
+						<option value="Trill Snare"></option>
+						<option value="Live Snare"></option>
+						<option value="Stereo Snare"></option>
+					</datalist>
+				</div>
+				<div class="button-block">
+					<a href="#" class="button">Boom</a>
+				</div>
+				
+		</div>
+		
+		
+
+		</div>
+		
+	</section>
+
+	<footer>
+		<div class="footer-text">Mykyta Hryboedov</div>
+	</footer>
+
 	</main>
 	
 </body>
