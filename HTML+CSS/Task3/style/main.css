@@ -23,7 +23,7 @@
   margin: 0;
   padding: 0;
   font-family: Roboto-Regular;
-  color: white;
+  color: #29ACD5;
 }
 
 header{
@@ -37,8 +37,12 @@ header{
 
 li{
   text-transform: uppercase;
-  display: inline-block;
+  display:block;
   padding: 0 1em;
+}
+
+li:hover{
+  cursor: pointer;
 }
 
 a{
@@ -113,7 +117,7 @@ figure{
   display: block;
   width: 5em;
   justify-content: space-around;
-  margin: 0;
+  margin: 1em;
   text-align: center;
 }
 
@@ -131,15 +135,20 @@ footer{
 }
 
 
+figcaption{
+  color: black;
+}
+
 .wrapper{
   display: flex;
   justify-content: center;
-  align-items: center;
+ /*  align-items: center; */
   margin-right: auto;
   margin-left:  auto; 
   max-width: 960px; 
   
 }
+
 
 .section-wrapper{
     display: flex;
@@ -150,10 +159,12 @@ footer{
 
 
 /* ABOUT */
+
 .about-image img {
   padding-top: 0.3em;
   max-height: 35em;
   max-width: 35em;
+  height: auto;
 }
 
 .about-info{
@@ -181,10 +192,12 @@ footer{
   background-color: #e7e7e7;
 }
 
+
 .snare{
   max-width: 5em;
   max-height: 5em;
 }
+
 
 .Content-Figure{
   margin: 1em 1em 1em;
@@ -211,6 +224,8 @@ footer{
 
 .button-block{
   padding-top: 2em;
+}
+.video-box{
   display: flex;
   justify-content: center;
 }

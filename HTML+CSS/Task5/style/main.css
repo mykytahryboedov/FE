@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../font/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../font/Roboto-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bookman-Regular';
+  src: url('../font/Bookman-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Roboto-Regular;
+}
+
+body{
+  background-color: #666666;
+}
+
+header{
+  background-color: black;
+}
+
+.wrapper{
+  display: flex;
+  max-width: 1440px;
+  align-items: center;
+  justify-content: center;
+  padding-left: auto;
+  padding-right: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* NAVBAR */
+.navbar{
+  display: flex;
+  width: 900px;
+  background-color: #e7e7e7;
+}
+
+ul{
+  display: inline-flex;
+  flex-direction: row;
+  list-style: none;
+  margin-left: 2em;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  position: relative;
+}
+li:hover{
+  background-color: red;
+}
+ul li a{
+  padding: 1em 1em 1em 2em;
+}
+
+ul li ul{
+  visibility: hidden;
+  background: orange;
+  position: absolute;
+  display: none;
+  padding: 1em;
+  left: 1;
+  opacity: 0;
+}
+
+ul li:hover > ul,
+ul li ul:hover{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+
+}
+.navbar-menu{
+  padding-top: 2.5em;
+}
+
+/* HEADER-IMAGE */
+
+h1{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 5em;
+  color: white;
+  font-size: 30px;
+}
+
+.header-image{
+  display: relative;
+  height: 25em;
+  width: 100%;
+  background-color: black;
+}
+
+/* ABOUT SECTION */
+
+.workers{
+  padding-top: 2em;
+}
+
+.about-row{
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  background-color: #e7e7e7;
+}
