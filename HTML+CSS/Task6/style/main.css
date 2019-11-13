@@ -1,0 +1,269 @@
+@font-face{
+    font-family: 'Roboto-Light';
+    src: url('../font/Roboto-Light.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Roboto-Bold';
+    src: url('../font/Roboto-Bold.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin:0 auto;
+    background: #353535;
+    position: relative;
+    height: 100vh;
+}
+.container-inner{
+    width:470px;
+    height:840px;
+    padding:20px 25px;
+}
+.container-inner-top{
+    width:470px;
+    height: 410px;
+    border-top-left-radius:50px;
+    border-top-right-radius:50px;
+    position: relative;
+    background: -webkit-linear-gradient(-45deg, #fa782e 8%, #c82930 83%);
+    -webkit-box-shadow: -10px 10px 0px -2px #252525; 
+    box-shadow: -10px 10px 0px -2px #252525;
+}
+.nike-logo{
+   position: absolute;
+   top:30px;
+   left:30px;  
+}
+.hartbespoort-text{
+    font-family: 'Roboto-Light';
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    font-size: 25px;
+    color:#fff;
+    text-transform: uppercase;
+    position: absolute;
+    top:80px;
+    left:30px;
+}
+.support-text{
+    font-family: 'Roboto-Light';
+    font-weight: bold;
+    font-size: 20px;
+    color:#fff;
+    position: absolute;
+    top:130px;
+    left:30px;
+}
+.fast-text{
+    font-family: 'Roboto-Bold';
+    font-size: 185px;
+    color:#000;
+    opacity: 0.1;
+    text-transform: uppercase;
+    position: absolute;
+    top: 200px;
+    left: -13px;
+}
+.sneaker{
+    margin-top: -2em;
+    position: absolute;
+    z-index: 1;
+    top: -28px;
+    left: 125px;
+    margin-left: -2em;
+}
+.container-inner-bottom{
+    width:470px;
+    height: 430px;
+    margin-top:-10px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    position: relative;
+    background-color: #fff;
+    -webkit-box-shadow: -10px 10px 0px -2px #252525; 
+    box-shadow: -10px 10px 0px -2px #252525;
+}
+.hartbespoort-text-2{
+    font-family: 'Roboto-Light';
+    letter-spacing: 0.15em;
+    font-size: 25px;
+    color:#000;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 20px 20px 5px 20px;
+}
+.green-text{
+    font-family: 'Roboto-Light';
+    letter-spacing: 0.15em;
+    border-radius: 7px;
+    color:#fff;
+    background-color:#11e95b;
+    text-transform: uppercase;
+    position: absolute;
+    box-shadow: -10px 20px 15px -10px rgba(17, 233, 91, 0.3);
+    
+}
+.new{
+    font-size: 20px;
+    padding:2px 10px;
+    top:20px;
+    left:260px;
+}
+.usd{
+    position: absolute;
+    font-size: 30px;
+    padding:10px 20px;
+    top:700px;
+    left:280px;
+}
+.basketball-text{
+    font-family: 'Roboto-Bold';
+    font-size: 15px;
+    color:#000;
+    text-transform: uppercase;
+    position: absolute;
+    top:55px;
+    left:21px;
+}
+.rating {
+    position: absolute;
+    top:80px;
+    left:20px;
+}
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:25px;
+    line-height:1.2;
+    color:#A9A9A9;
+}
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+.rating > input:checked ~ label {
+    color: #000;
+}
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #000;
+}
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #000;
+}
+.size-color-text{
+    font-family: 'Roboto-Bold';
+    font-size: 20px;
+    color:#000;
+    text-transform: uppercase;
+    position: absolute;
+}
+.size{
+    top:135px;
+    left:20px;
+}
+.color{
+    top:240px;
+    left:20px;
+}
+.flex-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    position: absolute;
+    top:185px;
+    left:20px;
+}
+.flex-elem:first-child{
+   margin-left: 0;
+}
+.flex-elem{
+    padding:5px;
+    width:20px;
+    height:20px;
+    text-align:center;
+    font-family: 'Roboto-Light';
+    font-size:17px;
+    margin-left:50px;
+}
+.flex-elem:hover{
+    cursor: pointer;
+    background: #f35e3d;
+    color:#fff;
+    border-radius: 20px;
+}
+.color-block{
+    position: absolute; 
+    top:310px; 
+    left:20px;
+}
+.radio {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+    margin: 10px 0 0 25px;
+    border: 1px solid #f35e3d;
+}
+.radio + label {
+	position: relative;
+	padding: 0 0 0 65px;
+	cursor: pointer;
+}
+.radio + label:before {
+	content: '';
+	position: absolute;
+	top: 1px;
+    left: 4px;
+    width: 40px;
+    height: 40px;
+	border-radius: 50%;
+	background: #FFF;
+}
+.radio + label:after {
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 9px;
+	width: 30px;
+    height: 30px;
+	border-radius: 50%;
+    background: #f35e3d;
+	opacity: 0;
+	transition: .2s;
+}
+.second + label:after{
+    background: #11e95b;
+}
+.third + label:after{
+    background: #ffd414;
+}
+
+.radio:checked + label:after {
+	opacity: 1;
+}
+.radio:focus + label:before {
+	box-shadow: 0 0 0 1px red;
+}
+.second:focus + label:before {
+	box-shadow: 0 0 0 1px #11e95b;
+}
+
+.third:focus + label:before {
+	box-shadow: 0 0 0 1px #ffd414;
+}

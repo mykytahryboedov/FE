@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<title>Task5</title>
 	<link rel="stylesheet" type="text/css" href="style/main.css">
 </head>
-<body>
+<body>			
 	<div class="wrapper">
 		<header>
 			<nav class="navbar">
@@ -15,7 +16,14 @@
 				</a>
 			</div>
 			<div class="navbar-menu">
-				<ul>
+				<div class="menu__icon">
+			      <span></span>
+			      <span></span>
+			      <span></span>
+			      <span></span>
+				</div>
+
+				<ul class="navbar-menu-list">
 					<li class="navbar-menu_item">
 						<a href="" class="navbar-menu_link">Home</a>
 					</li>
@@ -25,20 +33,20 @@
 					<li class="dropdown">
 						<a href="" class="navbar-menu_link">Shop</a>
 						<ul class="dropdown-menu">
-							<li>
-								<a href="#">1</a>	
+							<li class="dropdown-list__item">
+								<a href="https://www.google.com.ua/?hl=ru" target="_blank">1</a>	
 							</li>
-							<li>
-								<a href="#">2</a>	
+							<li class="dropdown-list__item">
+								<a href="https://www.google.com.ua/?hl=ru" target="_blank">2</a>	
 							</li>
-							<li>
-								<a href="#">3</a>	
+							<li class="dropdown-list__item">
+								<a href="https://www.google.com.ua/?hl=ru" target="_blank">3</a>	
 							</li>
-							<li>
-								<a href="#">4</a>	
+							<li class="dropdown-list__item">
+								<a href="https://www.google.com.ua/?hl=ru" target="_blank">4</a>	
 							</li>
-							<li>
-								<a href="#">5</a>	
+							<li class="dropdown-list__item">
+								<a href="https://www.google.com.ua/?hl=ru" target="_blank">5</a>	
 							</li>
 							
 						</ul>
@@ -58,11 +66,12 @@
 		</header>
 	</div>		
 	<section id="about" class="workers">
+		<div class="wrapper"><h2 class="services-title">About</h2></div>
 		<div class="wrapper">
 			<div class="about-row">
 			<div class="about-row1">
 				<div class="about-row1_content1">
-					<img src="img/about-image.jpg">
+					<img src="img/about-image.jpg" class="about-image">
 				</div>
 				<div class="about-row1_content2">
 					<p>
@@ -74,16 +83,195 @@
 						<span>Front-end developer</span>
 					</p>
 					<p>
-						
+						<span class="title-s">E-mail:</span>
+						<span>contact@mail.com</span>
+					</p>
+					<p>
+						<span class="title-s">Phone:</span>
+						<span>(380)225-35-35</span>
 					</p>
 				</div>
 			</div>
 			<div class="about-row2">
 				<div class="about-row2_content1">
+					<h5 class="about-title">About me</h5>
+				</div>
+				<p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</p>
+			</div>
+		</div>
+	</section>
+	<section id="services" class="our-services">
+		<div class="wrapper"><h2 class="services-title">Our services</h2></div>
+		<div class="wrapper">
+			<div class="services-content">	
+				<div class="services-list__item">
+					<div class="services-list__item-icon">
+						<img src="img/services.svg" width="35" height="35">
+					</div>
+					<div class="services-list__item-text">
+						<span class="title-s">Lorem Ipsum!</span> 
+						<p>lore?</p>
+					</div>
+				</div>
+				<div class="services-list__item">
+					<div class="services-list__item-icon">
+						<img src="img/services.svg" width="35" height="35">
+					</div>
+					<div class="services-list__item-text">
+						<span class="title-s">Lorem Ipsum!</span> 
+						<p>lore?</p>
+					</div>
+				</div>
+				<div class="services-list__item">
+					<div class="services-list__item-icon">
+						<img src="img/services.svg" width="35" height="35">
+					</div>
+					<div class="services-list__item-text">
+						<span class="title-s">Lorem Ipsum!</span> 
+						<p>lore?</p>
+					</div>
+				</div>
+				<div class="services-list__item">
+					<div class="services-list__item-icon">
+						<img src="img/services.svg" width="35" height="35">
+					</div>
+					<div class="services-list__item-text">
+						<span class="title-s">Lorem Ipsum!</span> 
+						<p>lore?</p>
+					</div>
+				</div>
+				<div class="services-list__item">
+					<div class="services-list__item-icon">
+						<img src="img/services.svg" width="35" height="35">
+					</div>
+					<div class="services-list__item-text">
+						<span class="title-s">Lorem Ipsum!</span> 
+						<p>lore?</p>
+					</div>
+				</div>
+				<div class="services-list__item">
+					<div class="services-list__item-icon">
+						<img src="img/services.svg" width="35" height="35">
+					</div>
+					<div class="services-list__item-text">
+						<span class="title-s">Lorem Ipsum!</span> 
+						<p>lore?</p>
+					</div>
+				</div>
+				
+		</div>
+		</div>				
+	</section>
+	<section id="contacts" class="our-contacts">
+		<div class="wrapper"><h2 class="services-title">Contacts</h2></div>
+		
+		<div class="wrapper">
+		<div class="contact-row">
+			<div class="contact-row1">
+				<div class="contact-row1-title">
+						<h5 class="about-title">Don't Forget!</h5>
+				</div>
+				<div class="contact-form">
+					<div class="form-element">
+						<label for="name">Your Name: </label>
+						<input id="name" type="text" placeholder="Type your name...">				
+					</div>
+					<div class="form-element">
+						<label for="number">Your Telephone Number: </label>
+						<input id="number" type="text" placeholder="Type your number...">
+					</div>
+					<div class="form-element">
+						<label for="subject">Your Subject: </label>
+						<input id="subject" type="text" placeholder="Type your subject...">
+					</div>
+					<div class="button-block">
+						<a href="#" class="button"> Send Message</a>
+					</div>
 					
 				</div>
 			</div>
+			<div class="contact-row2">
+				<div class="contact-row2-title">
+					<h5 class="about-title">About us</h5>
+				</div>
+				<div class="contact-row2-info">
+					<p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</p>
+						<ul class="contact-list">
+						<li>
+							<img src="img/contact.svg" height="20" width="20">
+							Kyiv, Ukraine 
+						</li>
+						<li>
+							<img src="img/contact.svg" height="20" width="20">
+							(380)227-37-37
+						</li>
+						<li>
+							<img src="img/contact.svg" height="20" width="20">
+							 email@example.com
+						</li>
+					</ul>
+					<div class="contact-row2-socials">
+						<ul class="contact-socials">
+							<li>
+								<a href="">
+									<img src="img/facebook.svg" width="30" height="30"> 
+								</a>
+							
+							</li>
+							<li>
+								<a href="">
+									<img src="img/instagram.svg" width="30" height="30">
+								</a>
+								
+							</li>
+							<li>
+								<a href="">
+									<img src="img/twitter.svg" width="30" height="30">
+								</a>
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40667.09871550609!2d30.374249600000002!3d50.4281788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc904f159a6b%3A0xe273a985710ff3df!2z0JbQuNGC0L7QvNC40YDRgdC60LDRjw!5e0!3m2!1sru!2sua!4v1573638697345!5m2!1sru!2sua" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+			</div>
+
 		</div>
-	</section>			
+
+		</div>
+	</section>	
+	<footer>
+		<div class="wrapper">
+			<div class="footer-content">
+			<div class="footer-text">
+				<h3>Mykyta Hryboedov</h3>
+				<div class="footer-credits">
+					<p>Copyright ©2019</p>
+				</div>
+				
+			</div>
+			<div class="footer-link">
+				<h5>Follow me!</h5>
+
+				<ul class="footer-link-list">
+					<li>
+						<a href="https://soundcloud.com/shroomytheshroom" class="footer_link" target="_blank"><img src="img/facebook.svg" height="20" width="20"></a>
+					</li>
+					<li>
+						<a href="https://soundcloud.com/shroomytheshroom" class="footer_link" target="_blank"><img src="img/facebook.svg" height="20" width="20"></a>
+					</li>
+					<li>
+						<a href="https://soundcloud.com/shroomytheshroom" class="footer_link" target="_blank"><img src="img/facebook.svg" height="20" width="20"></a>
+					</li>
+					
+					
+				</ul>
+			</div>
+		</div>
+		</div>	
+	</footer>	
 </body>
 </html>
