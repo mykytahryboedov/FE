@@ -43,10 +43,6 @@ h2:before{
 
 }
 
-nav{
-	display: none;
-}
-
 footer{
 	text-align: center;
 }
@@ -59,9 +55,11 @@ article header{
 
 section{
 	display: inline-flex;
-	flex-direction: column;
-	max-width: 400px;
-	margin-left: 200px;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 30%;
+    width: 100%;
+    padding-left: 15em;
 }
 
 a{
@@ -70,7 +68,7 @@ a{
 }
 
 a:hover{
-	font-size: 25px;
+	font-size: 20px;
 	transition: .5s ease;
 	color: #34a4eb;
 }
@@ -103,4 +101,41 @@ li:hover:before{
 	color: black;
 	background-color: #e7e7e7;
 	transition: all .3s ease;
+}
+
+header{
+	height: 175px;
+}
+
+nav {
+	padding-top: 4em;
+	display: inline-flex;
+	flex-direction: column;
+	max-width: 150px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: 0;
+
+}
+
+nav ul {
+    position: relative;
+    width: 100%;
+    right: 100%; 
+    opacity: 0;
+    color: #272822;
+    transition: all .3s ease;
+    overflow-y: scroll;
+    max-height: 500px;
+}
+
+nav:hover ul{
+	right: 0;
+	opacity: 1;
+}
+
+nav ul li a:first-child {
+    color: #e7e7e7;
+    font-size: 16px;
+    display: block;
 }
