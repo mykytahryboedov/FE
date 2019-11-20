@@ -1,0 +1,103 @@
+@font-face{
+	font-family: 'Diablo-Heavy';
+	src: url(../font/Diablo-Heavy.ttf);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Diablo-Heavy';
+	color: white;
+}
+
+ul{
+	margin: 0;
+	list-style-type: none;
+}
+
+input{
+	background: 0;
+	font-family: 'Diablo-Heavy';
+	font-size: 23px;
+	cursor: text;
+	text-align: right;
+}
+
+::placeholder {
+  color: white;
+}
+
+.diabla{
+	background-image: url(../images/back-big.png);
+	height: 978px;
+	width: 1332px;
+}
+
+#bg-item{
+	margin-left: 3.64em;
+}
+
+#bg-item-right{
+	margin-left: -5.7px;
+}
+
+.background-item {
+	position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 4em;
+    font-size: 23px;
+}
+
+.bg-image-size{
+
+	height: 711px;
+    width: 541px;
+}
+
+.background-gold{
+	position: absolute;
+    top: 132px;
+    left: 86px;
+}
+
+.gold-item{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 284px;
+    border: 5px ridge #f3f2ed;
+    background-color: black;
+    height: 28px;
+}
+
+.gold-image{
+	display: inline-flex;
+}
+
+#gold-icon{
+	height: 30px;
+	width: 30px;
+    border-right: 5px ridge #f3f2ed;
+}
+
+#gold-area{
+	width: 253px;
+	border: 0;
+}
+
+/* #bg-item;{
+	position: relative;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+#bg-item-right{
+	position: relative;
+	width: 100%;
+	top: 5;
+	left: 5;
+}
+ */
