@@ -87,17 +87,157 @@ input{
 	border: 0;
 }
 
-/* #bg-item;{
-	position: relative;
-	width: 100%;
-	top: 0;
-	left: 0;
+
+/* RIGHT SECTION */
+.hero-items{
+position: absolute;
+    top: 94px;
+    right: 28px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
-#bg-item-right{
-	position: relative;
-	width: 100%;
-	top: 5;
-	left: 5;
+.hero-items-leftside{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
- */
+
+.hero-button{
+	padding-left: 0;
+	list-style-type: none;
+	display: inline-flex;
+	justify-content: center;
+	width: 94.5px;
+
+}
+
+.hero-button:first-child{
+	background-color: #92938e;
+}
+
+.hero-button li:last-child{
+	background-color: #6666;
+}
+
+.hero-button-item{
+}
+
+a{
+	padding: 0 .6em;
+	border: 5px ridge #f3f2ed;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: -5px;
+}
+
+.magic-wand{
+	background-color: #666666;
+	padding: 0 1em;
+	border: 5px ridge #f3f2ed;
+}
+
+.light-gauntlets{
+	height: 85px;
+	background-color: #666666;
+    border: 5px ridge #f3f2ed;
+    border-top: none;
+
+}
+
+.hero-items-leftmiddleside{
+	padding-left: 1em;
+	display: flex;
+	align-items: flex-end;
+}
+
+.blue-ring{
+	height: 35px;
+	width: 35px;
+	background-color: #666666;
+	border: 5px ridge #f3f2ed;
+}
+
+.hero-items-middleside{
+	padding-left: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero-items-middleside img{
+	margin-top: 0.9em;
+    width: 90px;
+}
+
+.hero-items-middleside img:first-child{
+	margin-top: 0;
+}
+
+.circlet{
+	position: relative;
+	background-color: #666666;
+	border: 5px ridge #f3f2ed;
+}
+
+.circlet:before{
+	content: '';
+	display: block;
+	background-image: url(../images/triangle.png);
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	top: 0;
+	right: 0;
+}
+
+.armor{
+	background-color: #666666;
+	border: 5px ridge #f3f2ed;
+}
+
+.belt{
+	background-color: #666666;
+	border: 5px ridge #f3f2ed;
+}
+
+.hero-items-rightmiddleside{
+	padding-left: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.amulet{
+	margin-top: 1.9em;
+	width: 35px;
+	height: 35px;
+	background-color: #666666;
+	border: 5px ridge #f3f2ed;
+}
+
+.hero-items-rightside{
+	padding-left: 1em;
+	display: flex;
+	flex-direction: column;
+}
+
+.magic-wand-right{
+	background-color: darkred;
+	padding: 0 1em;
+	border: 5px ridge #f3f2ed;
+	width: 38px;
+	height: 166px;
+}
+
+.boots{
+	width: 84px;
+	height: 84px;
+	background-color: #666666;
+	border: 5px ridge #f3f2ed;
+	border-top: none;
+}
