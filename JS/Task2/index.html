@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task2</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Hello it's my game, turtle!</h1>
+		<p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or less. We'll tell you if your guess was too high or too low.</p>
+		<div class="form">
+			<label for="guessField">
+				Enter a guess: 
+				<input type="text" id="guessField" class="guessField">
+				<input type="submit" value="Submit guess" class="guessSubmit">
+			</label>
+		</div>
+		<div class="resultBlock">
+			<p class="guesses"></p>
+			<p class="lastResult"></p>
+			<p class="lowOrHi"></p>
+		</div>		
+	</div>
+	
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>
