@@ -1,0 +1,539 @@
+@font-face{
+	font-family: 'Diablo-Heavy';
+	src: url(../font/Diablo-Heavy.ttf);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Diablo-Heavy';
+	color: white;
+	background-color: black;
+}
+
+ul{
+	margin: 0;
+    top: 93px;
+    position: absolute;
+    padding: 0;
+    list-style-type: none;
+}
+}
+
+input{
+	outline: none;
+}
+
+::placeholder {
+	font-family: 'Diablo-Heavy' ;
+  color: white;
+}
+
+
+.diabla {
+    background-size: contain;
+    display: flex;
+    background-image: url(../images/back-big.png);
+    height: 978px;
+    width: 1332px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#bg-item-right{
+	margin-left: -5.7px;
+}
+
+.background-item {
+	position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 23px;
+}
+
+.bg-image-size{
+
+	height: 711px;
+    width: 541px;
+}
+
+.background-gold{
+    position: absolute;
+    top: 40px;
+    left: 125px;
+}
+
+.gold-item{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 284px;
+    border: 5px ridge #f3f2ed;
+    background-color: black;
+    height: 28px;
+}
+
+.gold-image{
+	display: inline-flex;
+}
+
+#gold-icon{
+	height: 30px;
+	width: 30px;
+    border-right: 5px ridge #f3f2ed;
+}
+
+#gold-area{
+	width: 253px;
+	border: 0;
+	background: 0;
+	font-family: 'Diablo-Heavy';
+	font-size: 23px;
+	cursor: text;
+	text-align: right;
+}
+
+/* LEFT SOCKETS */
+
+.inventory-left-grid{
+    position: absolute;
+    width: 487px;
+    height: 480px;
+    left: 28px;
+    top: 135px;
+    background: black;
+    display: grid;
+    grid-template-rows: repeat(10, 48px);
+    grid-template-columns: repeat(10, 49px);
+}
+
+/* RIGHT SOCKETS */
+
+.inventory-right-grid{
+    position: absolute;
+    width: 488px;
+    height: 323px;
+    display: grid;
+    top: 314px;
+    left: 28px;
+    background-color: black;
+    grid-template-rows: repeat(6, 54px);
+    grid-template-columns: repeat(10, 49px);
+}
+
+/* SOCKET OPTIONS*/
+
+.item-cell{
+	border: 3px ridge grey;
+	position: relative;
+	}
+
+.cube{
+	background: url("../images/cube.png") no-repeat;
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.rune{
+	background: url("../images/runa-branch.png") no-repeat;
+}
+
+.gem{
+	background: url("../images/runa-cristall.png") no-repeat;
+}
+
+.eye{
+	background: url("../images/eye.png") no-repeat;
+}
+
+.fire{
+	background: url("../images/fire.png") no-repeat;
+	grid-row: span 2;
+}
+
+.blue-book{
+	background: url("../images/blue-book.png") no-repeat;
+	grid-row: span 2;
+}
+
+.gold-book{
+	background: url("../images/gold-book.png") no-repeat;
+	grid-row: span 2;
+}
+
+.key{
+	background: url("../images/key.png") no-repeat;
+}
+
+.life{
+	background: url("../images/life.png") no-repeat;
+}
+
+.crown{
+	background: url(../images/crown.jpg);
+}
+
+.orange-ring{
+	background: url(../images/orange-ring.png);
+}
+.cube, .rune, .gem, .eye, .fire, .blue-book, .gold-book, .key, .life, .crown, .orange-ring{
+	cursor: pointer;
+	background-position: center;
+	background-size: contain;
+	position: relative;	
+}
+
+
+
+/* BUTTON LEFT */
+
+.inventory-left-button{
+	display: block;
+	position: absolute;
+    bottom: 13px;
+    left: 456px;
+}
+
+.left-button{
+	cursor: pointer;
+	height: 56px;
+	width: 56px;
+}
+
+/* RIGHT SECTION */
+.hero-items{
+    position: absolute;
+    top: 3px;
+    right: 28px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.hero-items-leftside{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero-button{
+	position: absolute;
+	top: 0;
+	padding-left: 0;
+	list-style-type: none;
+	display: inline-flex;
+	justify-content: center;
+	width: 94.5px;
+
+}
+
+.hero-button:first-child{
+	background-color: #e7e7e7;
+}
+
+.hero-button li:last-child{
+	background-color: #6666;
+}
+
+
+.hero-button-link{
+	padding: 0 .6em;
+	border: 5px ridge #f3f2ed;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: -5px;
+}
+
+.magic-wand{
+	margin-top: 1.4em;
+	background-color: rgba(0,0,0,.6);
+	padding: 0 1em;
+	border: 5px ridge #f3f2ed;
+}
+
+.light-gauntlets{
+	height: 85px;
+	background-color: rgba(0,0,0,.6);
+    border: 5px ridge #f3f2ed;
+    border-top: none;
+
+}
+
+.hero-items-leftmiddleside{
+	padding-left: 1em;
+	display: flex;
+	align-items: flex-end;
+}
+
+.blue-ring{
+	height: 35px;
+	width: 35px;
+	background-color: rgba(0,0,0,.6);
+	border: 5px ridge #f3f2ed;
+}
+
+.hero-items-middleside{
+	padding-left: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero-items-middleside img{
+	margin-top: 0.9em;
+    width: 90px;
+}
+
+.hero-items-middleside img:first-child{
+	margin-top: 0;
+}
+
+.circlet{
+	position: relative;
+	background-color: rgba(0,0,0,.6);
+	border: 5px ridge #f3f2ed;
+}
+
+.hero-items-middleside::before{
+	content: "";
+	display: block;
+	background-image: url(../images/triangle.png);
+
+	position: absolute;
+	height: 17px;
+	width: 20px;
+	top: 0;
+	right: 286px;
+}
+
+.armor{
+	background-color: rgba(0,0,0,.6);
+	border: 5px ridge #f3f2ed;
+}
+
+.belt{
+	background-color: rgba(0,0,0,.6);
+	border: 5px ridge #f3f2ed;
+}
+
+.hero-items-rightmiddleside{
+	padding-left: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.amulet{
+	margin-top: 1.9em;
+	width: 35px;
+	height: 35px;
+	background-color: rgba(0,0,0,.6);
+	border: 5px ridge #f3f2ed;
+}
+
+.hero-items-rightside{
+	padding-left: 1em;
+	display: flex;
+	flex-direction: column;
+}
+
+.magic-wand-right{
+	margin-top: 1.4em;
+	padding: 0 1em;
+	border: 5px ridge #f3f2ed;
+	background-color: rgba(0,0,0,.6);
+	width: 38px;
+	height: 166px;
+}
+
+.weapon-right:after {
+    position: absolute;
+    content: " ";
+    background-color: red;
+    height: 167px;
+    opacity: 0.4;
+    bottom: 0;
+    top: 37px;
+    width: 84px;
+    left: 382px;
+}
+
+.boots {
+    position: absolute;
+    width: 84px;
+    height: 84px;
+    background-color: rgba(0,0,0,.6);
+    border: 5px ridge #f3f2ed;
+    border-top: none;
+    bottom: 14px;
+}
+
+
+/* RIGHT BUTTON */
+
+.inventory-right-button{
+    position: absolute;
+    bottom: 16px;
+    right: 464px;
+}
+
+.right-button{
+	cursor: pointer;
+	height: 50px;
+	width: 50px;
+}
+
+/* GOLD RIGHT */
+
+.gold-right {
+	display: inline-flex;
+    color: white;
+    position: absolute;
+    border: 5px ridge white;
+    background-color: black;
+    bottom: 15px;
+    left: 126px;
+    width: 194px;
+}
+
+.money-right{
+	height: 30px;
+	width: 30px;
+	border-right: 5px ridge white;
+}
+
+#gold-area-right{
+    background: 0;
+    font-family: 'Diablo-Heavy';
+    font-size: 23px;
+    cursor: text;
+    text-align: right;
+    width: 20px;
+    border: 0;
+}
+
+/* FOOTER */
+
+.footer {
+    left: 316px;
+    position: absolute;
+    width: 640px;
+    height: 78px;
+    bottom: -40px;
+    background: url(../images/footer-center.png) no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 30px;
+    background-size: contain;
+}
+
+#footer-item {
+    position: absolute;
+    bottom: -129px;
+    left: -121px;
+}
+
+.button-1 {
+	position:absolute;
+	left: -40px;
+	top: 0;
+}
+
+.button-2 {
+	position:absolute;
+	top: 0;
+	right: -40px;
+	transform: scaleX(-1);
+}
+
+.bars {
+    position: relative;
+    right: 28px;
+    bottom: 5px;
+}
+.quickpanel {
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: repeat(4, 40px);
+    background-color: black;
+    position: relative;
+    left: 28px;
+}
+
+.quickpanel span {
+	position: absolute;
+	color: white;
+	font-size: 10px;
+	left: 0;
+	bottom: 0;
+}
+
+/* progress {
+	width: 160px;
+	height: 10px;
+} */
+.stamina {
+	position: relative;
+	background-color: gold;
+	width: 160px;
+	height: 20px;
+	border: 5px ridge #f3f2ed;
+	}
+
+.stamina img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	border-right: 5px ridge #f3f2ed;
+}
+
+.stamina:before{
+	content: '';
+    position: absolute;
+    height: 6px;
+    background-color: black;
+    width: 168px;
+    bottom: 32px;
+    left: -5px;
+    border: 1px solid white;
+
+}
+
+.stamina:after{
+	content: '';
+	position: absolute;
+	height: 4px;
+	background: white;
+	width: 56px;
+	bottom: 34px;
+	left: -3px;
+}
+
+/* ORBS */
+
+.red-orb{
+	display: inline-flex;
+}
+
+.health {
+    position: absolute;
+    bottom: -31px;
+    left: 45px;
+    height: 150px;
+}
+
+.mana {
+    position: absolute;
+    bottom: -41px;
+    left: 1142px;
+    height: 150px;
+}
+
