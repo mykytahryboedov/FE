@@ -1,5 +1,6 @@
 var Random = Math.floor(Math.random() * 100) + 1;
 
+var container = document.getElementsByClassName('container')[0];
 var guesses = document.querySelector('.guesses');
 var lastResult = document.querySelector('.lastResult');
 var lowOrHi = document.querySelector('.lowOrHi');
@@ -13,6 +14,8 @@ guessField.focus();
 
 function checkGuess() {
   var userGuess = Number(guessField.value);
+  let ComputerGuessLess = Math.floor(Math.random() * guessField.value  +1);
+  let computerGuessMore = Math.floor(Math.random() * (+100 - +guessField.value +1) + +guessField.value);
   if (guessCount === 1) {
     guesses.textContent = 'Previous guesses: ';
   }
@@ -31,18 +34,47 @@ function checkGuess() {
     lastResult.style.backgroundColor = 'red';
     if(userGuess < Random) {
       lowOrHi.textContent = 'Last guess was too low!';
-    } else if(userGuess > Random) {
+      if (ComputerGuessLess === Random) {
+        alert("Computer wins! He entered"  + " " + Random);
+        setGameOver();
+      }
+      else if (Random < ComputerGuessLess) {
+        alert('Computer entered: ' + ComputerGuessLess + '. Input a smaller number');
+      }
+      else {
+       alert('Computer entered: ' + ComputerGuessLess + '. Input a bigger number');
+      }
+    } 
+    else if(userGuess > Random) {
+      lowOrHi.textContent = 'Last guess was too high!';
+      if (ComputerGuessLess === Random) {
+        alert("Computer wins! He entered " + " " + Random);
+        setGameOver();
+      }
+      else if (Random < computerGuessMore) {
+        alert('Computer entered: ' + computerGuessMore + '. Input a smaller number');
+      }
+      else {
+       alert('Computer entered: ' + computerGuessMore + '. Input a bigger number');
+      }
+    } 
+    else if(userGuess > Random) {
       lowOrHi.textContent = 'Last guess was too high!';
     }
-  }
+    }
+
+ 
  
 function setGameOver(){
 	guessField.disabled = true;
 	guessSubmit.disabled = true;
 	resetButton = document.createElement('button');
 	resetButton.textContent = 'Try again';
-	document.body.appendChild(resetButton);
+	container.appendChild(resetButton);
 	resetButton.addEventListener('click', resetGame);
+  resetButton.style.width = "10em";
+  resetButton.style.height =  "2em";
+
 }
 
 function resetGame() {
